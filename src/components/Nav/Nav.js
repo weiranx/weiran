@@ -7,15 +7,14 @@ import {
 } from 'react-router-dom'
 
 class Nav extends Component {
+    constructor() {
+        super()
+        this.state = {
+
+        }
+    }
     componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll)
-    }
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll)
-    }
-    handleScroll() {
-        console.log("Scrolling")
-        console.log(document.getElementById("banner-title").offsetTop)
+
     }
   render() {
     return (
@@ -31,7 +30,7 @@ class Nav extends Component {
                         <Link className="nav-link" to="/">home()<span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">aboutme()</a>
+                        <a className="nav-link" href="/quiz2">quiz2()</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="#">resume()</a>
