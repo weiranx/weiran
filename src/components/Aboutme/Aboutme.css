@@ -1,0 +1,27 @@
+.Aboutme {
+    margin-top: 50px;
+}
+
+.subtitle {
+    fontsize: 1.5em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #dddddd;
+}
+
+.content {
+    padding: 20px;
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+.content-list {
+    list-style: none;
+
+}
+
+.profile-img {
+    width: 180px;
+    margin-left: 30px;
+    opacity: 0.8;
+}

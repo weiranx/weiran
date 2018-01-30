@@ -1,0 +1,49 @@
+.banner-bg {
+    height: 500px;
+    background: url("/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: fade-in 1s;
+}
+
+
+.banner-title {
+    font-size: 2em;
+    text-align: center;
+    padding-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    animation: fade-in-from-right 1s;
+}
+
+.banner-title::before {
+    content: "[";
+    padding-right: 30px;
+    color: #AAAAAA;
+}
+.banner-title::after {
+    content: "]";
+    padding-left: 30px;
+    color: #AAAAAA;
+}
+
+@keyframes fade-in-from-right {
+    0% {
+        opacity: 0;
+        margin-left: 30px;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
