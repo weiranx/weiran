@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './Contact.css'
 
+
 class Contact extends Component {
     render() {
         return (
@@ -10,6 +11,8 @@ class Contact extends Component {
                     <div className="contact-info col-lg-6">
                         <h6>Name: Weiran Xiong</h6>
                         <h6>Email: weiranxiong@gmail.com</h6>
+
+
                     </div>
                     <div className="contact-form col-log-6">
                         <form>

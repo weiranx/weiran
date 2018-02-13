@@ -4,7 +4,7 @@ import './App.css'
 import {
     BrowserRouter as Router,
     Route,
-    Link
+    Switch
 } from 'react-router-dom'
 
 
@@ -13,7 +13,8 @@ import Nav from './components/Nav/Nav.js'
 import Banner from './components/Banner/Banner.js'
 import Aboutme from './components/Aboutme/Aboutme.js'
 import Contact from './components/Contact/Contact.js'
-import Quiz2 from './components/Quiz2/Quiz2.js'
+import QuizReview from './components/QuizReview/QuizReview.js'
+import NotFound from "./components/NotFound/NotFound.js";
 
 class App extends Component {
   render() {
@@ -22,9 +23,14 @@ class App extends Component {
             <div className="App">
                 <Nav />
                 <Banner />
+                <Switch>
                 <Route exact path="/" component={Aboutme} />
                 <Route path="/contact" component={Contact} />
-                <Route path="/quiz2" component={Quiz2} />
+
+                <Route path={"/quizreview/:quizNum"} component={QuizReview} />
+                    <Route path={"/quizreview"} component={QuizReview} />
+                <Route path={"*"} component={NotFound} />
+                </Switch>
             </div>
         </Router>
     );

@@ -1,0 +1,15 @@
+clear 
+
+rm -rf build
+npm run build
+cd build
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/weiranx/weiran-build.git
+git push -f origin master
+
+clear
+echo "Preparing Server..."
+ssh root@weiranxiong.me
+echo "Success"

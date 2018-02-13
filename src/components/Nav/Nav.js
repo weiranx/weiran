@@ -10,11 +10,19 @@ class Nav extends Component {
     constructor() {
         super()
         this.state = {
-
+            navState: "home"
         }
     }
     componentDidMount() {
 
+    }
+    capitalizeWord = word => {
+        return word.charAt(0).toUpperCase() + word.slice(1);
+    }
+    enterLink = link => {
+        this.setState({
+            navState: link
+        })
     }
   render() {
     return (
@@ -26,17 +34,17 @@ class Nav extends Component {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
-                    <li className="nav-item active">
-                        <Link className="nav-link" to="/">home()<span className="sr-only">(current)</span></Link>
+                    <li className="nav-item active" id="home">
+                        <Link className="nav-link" to="/" >home()<span className="sr-only">(current)</span></Link>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="/quiz2">quiz2()</a>
+                    <li className="nav-item" id="quiz2">
+                        <Link className="nav-link" to="/quizreview" >quiz()</Link>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">resume()</a>
+                    <li className="nav-item" id="resume">
+                        <a className="nav-link" href="/resume" >resume()</a>
                     </li>
-                    <li className="nav-item">
-                        <Link className="nav-link disabled" to="/contact">contact()</Link>
+                    <li className="nav-item" id="contact">
+                        <Link className="nav-link disabled" to="/contact" >contact()</Link>
                     </li>
                 </ul>
             </div>

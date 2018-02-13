@@ -1,12 +1,16 @@
-import React, {Component} from 'react
-import './404.css'
+import React, {Component} from 'react'
+import './NotFound.css'
 
-class 404 extends Component {
+class NotFound extends Component {
     render() {
         return (
-
+            <div className="container">
+            <div className="NotFound">
+                <h3>Resource Not Found!</h3>
+            </div>
+            </div>
         )
     }
 }
 
-export default 404
+export default NotFound
