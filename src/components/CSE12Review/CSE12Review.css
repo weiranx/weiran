@@ -1,0 +1,28 @@
+.CSE12Review {
+    margin-top: 80px;
+}
+.CSE12Review h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.CSE12Review a {
+    margin-right: 20px;
+}
+.CSE12Review .resource-selector {
+    margin-bottom: 20px;
+}
+
+.search-form {
+    margin-top: 20px;
+}
+
+.CSE12Review .search-form input {
+    width: 300px;
+    display: inline;
+}
+
+.CSE12Review .search-form button {
+    display: inline;
+    margin-left: 20px;
+}

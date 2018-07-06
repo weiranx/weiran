@@ -1,0 +1,24 @@
+.Resume {
+    margin-top: 80px;
+
+}
+.Resume h2 {
+    font-size: 1.5em;
+}
+.Resume h3 {
+    font-size: 1.2em;
+}
+
+.Resume .resume-content {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.Resume .download-link {
+    display: block;
+    width: 100%;
+}
+
+.Resume .hireme-link {
+    font-size: 1.5em;
+}

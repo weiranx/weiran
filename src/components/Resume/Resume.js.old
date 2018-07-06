@@ -1,0 +1,55 @@
+import React, {Component} from 'react'
+import './Resume.css'
+
+import {Link} from 'react-router-dom'
+
+
+import ReactMarkdown from 'react-markdown'
+import axios from 'axios'
+import NotFound from "../NotFound/NotFound";
+
+class Resume extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            loadSuccess: false,
+            markdownData: ""
+        }
+    }
+
+    componentDidMount() {
+        this.getResume()
+    }
+
+    getResume() {
+        const dataUrl = "https://cdn.rawgit.com/weiranx/resume/b10beb5c/resume.md"
+        axios.get(dataUrl).then(res => {
+            this.setState({
+                markdownData: res.data,
+                loadSuccess: true,
+            })
+        }).catch(err => {
+            this.setState({
+                loadSuccess: false
+            })
+        })
+    }
+
+    render() {
+        return (
+            <div className="container">
+            <div className="Resume">
+                {this.state.loadSuccess
+                ?
+                    <div className="resume-content">
+                        <div className="print-link"><Link className="print-item" to="/contact">Hire Me!</Link> <a className="print-item" href="javascript:window.print()" >print</a></div>
+                        <ReactMarkdown source={this.state.markdownData}/>
+                    </div>
+                : <NotFound/> }
+            </div>
+            </div>
+        )
+    }
+}
+
+export default Resume

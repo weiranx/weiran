@@ -1,7 +1,16 @@
 .Contact {
+
     margin-top: 80px;
     margin-bottom: 100px;
 }
 .Contact h1 {
     margin-bottom: 20px;
+}
+
+.contact-form {
+    margin-top: 40px;
+}
+
+.Contact .btn {
+    margin-top: 15px;
 }

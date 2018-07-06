@@ -9,7 +9,10 @@ git commit -m "first commit"
 git remote add origin https://github.com/weiranx/weiran-build.git
 git push -f origin master
 
+cd ../
 clear
 echo "Preparing Server..."
-ssh root@weiranxiong.me
+ssh root@weiranxiong.me 'bash -s' < ./updateServeContent.sh
+
+
 echo "Success"
