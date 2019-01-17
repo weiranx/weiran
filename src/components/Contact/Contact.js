@@ -28,6 +28,8 @@ class Contact extends Component {
                     <div className="contact-info col-lg-6 ">
                         <h6>Name: Weiran Xiong</h6>
                         <h6>Email: weiranxiong@gmail.com</h6>
+                        <h6>Github: <a href="https://github.com/weiranx/">@weiranx</a></h6>
+                        <h6>LinkedIn: <a href="https://www.linkedin.com/in/weiranxiong/">@weiranxiong</a></h6>
 
                         <MyMapComponent
                             isMarkerShown
