@@ -7,9 +7,7 @@ class Aboutme extends Component {
             <div className="Aboutme container">
                 <h5 className="subtitle">About Me</h5>
                 <div className="content">
-                    <img src="/profile.jpg" className="rounded float-right profile-img" />
-                    <p>Hi. My Name is Weiran Xiong. I am a college student in University of California, San Diego. I am a first-year sophomore student, majoring in a math-computer science.</p>
-                    <p>Being an international student in the US, I feel like </p>
+                    <p>Hi, my name is Weiran. I am a software engineer, a college student</p>
                 </div>
                 <h5 className="subtitle">Skills</h5>
                 <div className="content">
