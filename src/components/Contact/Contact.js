@@ -18,26 +18,7 @@ class Contact extends Component {
 
     handleFromSubmit(evt) {
         evt.preventDefault()
-
-        var obj = serialize(evt.target, {hash: true})
-
-        const secret = "6LfNEkYUAAAAAK2MI8CwIsXVZdFed3DD4kIPe555"
-        const url = "https://www.google.com/recaptcha/api/siteverify"
-
-        axios.post(url, {
-            "secret": secret,
-            "g-recaptcha-response": obj["g-recaptcha-response"]
-        }).then(res => {
-            if (res.data.success === true) {
-                evt.target.reset()
-                alert("Submitted. We'll get in touch soon")
-            } else {
-                alert("Auth failed!")
-            }
-        }).catch(err => {
-            alert("Capcha failed")
-        })
-
+        
     }
     render() {
         return (
@@ -76,7 +57,7 @@ class Contact extends Component {
                                 <label>Message (Required)</label>
                                 <textarea required type="text" className="form-control" id="messageInput" placeholder="Leave your message here......" />
                             </div>
-                            <div class="g-recaptcha" data-sitekey="6LfNEkYUAAAAACw1AxlQlYXeYZMo9cYcMhfFy1Kh"></div>
+
                             <button type="submit" className="btn btn-sm btn-primary">Submit</button>
                         </form>
                     </div>

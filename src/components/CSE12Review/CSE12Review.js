@@ -50,7 +50,6 @@ class CSE12Review extends Component {
         evt.preventDefault()
         var obj = serialize(evt.target, {hash: true})
         var resName = obj['resourceInput']
-        alert(resName)
         this.getData(resName)
     }
 

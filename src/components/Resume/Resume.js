@@ -11,7 +11,7 @@ class Resume extends Component {
         super(props)
         this.state = {
             pageNumber: 1,
-            resumeUrl: "https://cdn.rawgit.com/weiranx/resume/b10beb5c/resume.pdf"
+            resumeUrl: "/resume.pdf"
         }
     }
 
