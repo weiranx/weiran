@@ -67,16 +67,16 @@ class Nav extends Component {
             <div className="collapse navbar-collapse navbar-right" id="navbarNav">
                 <ul className="navbar-nav ml-auto">
                     <li className={"nav-item "+ this.state.homeActive === true ? "active" : ""} id="home">
-                        <Link className="nav-link" to="/" >home()<span className="sr-only">(current)</span></Link>
+                        <Link className="nav-link" to="/" >home<span className="sr-only">(current)</span></Link>
                     </li>
                     <li className={"nav-item "+ this.state.reviewActive === true ? "active" : ""} id="cse12review">
-                        <Link className="nav-link" to="/cse12review" >cse12Review()</Link>
+                        <Link className="nav-link" to="/blog" >blog</Link>
                     </li>
                     <li className={"nav-item "+ this.state.resumeActive === true ? "active" : ""} id="resume">
-                        <Link className="nav-link" to="/resume" >resume()</Link>
+                        <Link className="nav-link" to="/resume" >resume</Link>
                     </li>
                     <li className={"nav-item "+ this.state.contactActive === true ? "active" : ""} id="contact">
-                        <Link className="nav-link" to="/contact" >contact()</Link>
+                        <Link className="nav-link" to="/contact" >contact</Link>
                     </li>
                 </ul>
             </div>

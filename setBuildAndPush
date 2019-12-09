@@ -5,7 +5,7 @@ npm run build
 cd build
 git init
 git add .
-git commit -m "first commit"
+git commit -m $1
 git remote add origin https://github.com/weiranx/weiran-build.git
 git push -f origin master
 
